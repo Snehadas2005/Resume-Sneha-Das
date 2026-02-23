@@ -1,210 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneha Das Resume</title>
+    <title>Sneha Das - Resume</title>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            padding: 60px 80px;
-            max-width: 1200px;
-            margin: 0 auto;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #222;
+            margin: 40px auto;
+            max-width: 850px;
+            padding: 0 20px;
         }
-        
-        #header {
+
+        h1 {
             text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        #header h1 {
-            font-size: 48px;
-            font-weight: 300;
-            letter-spacing: 12px;
-            margin-bottom: 20px;
-        }
-        
-        #header h1 span {
-            font-weight: 600;
-        }
-        
-        #header hr {
-            border: none;
-            border-top: 1px solid #000;
-            margin: 20px 0;
-        }
-        
-        #header p {
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        
-        main {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 60px;
-            margin-top: 40px;
-        }
-        
-        h2 {
-            font-size: 16px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-        
-        #mainLeft section p,
-        #mainLeft section ul li {
-            font-size: 13px;
-            line-height: 1.8;
-            color: #000;
-        }
-        
-        #mainLeft ul {
-            list-style: none;
-        }
-        
-        #mainLeft ul li {
+            font-size: 28px;
             margin-bottom: 5px;
         }
-        
-        #mainRight p {
-            font-size: 13px;
-            line-height: 1.8;
-            color: #000;
+
+        .contact {
+            text-align: center;
+            font-size: 14px;
             margin-bottom: 15px;
         }
-        
-        .job-title {
-            font-weight: 600;
-            font-size: 14px;
+
+        h3 {
+            font-size: 18px;
             margin-top: 25px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 4px;
         }
-        
-        .job-date {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 10px;
+
+        h4 {
+            margin: 0;
+            font-size: 15.5px;
         }
-        
-        #mainRight ul {
-            list-style: disc;
-            padding-left: 20px;
+
+        .section {
             margin-bottom: 15px;
         }
-        
-        #mainRight ul li {
-            font-size: 13px;
-            line-height: 1.8;
-            margin-bottom: 5px;
-        }
-        
-        .skill-category {
-            font-weight: 600;
-            font-size: 13px;
-            margin-top: 15px;
-            margin-bottom: 5px;
-        }
-        
-        .contact-item {
+
+        .flex-row {
             display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 8px;
-            font-size: 13px;
+            justify-content: space-between;
+            align-items: baseline;
         }
-        
-        .icon {
-            width: 16px;
+
+        ul {
+            margin-top: 6px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .subtext {
+            margin-left: 15px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 15px 0;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
         }
     </style>
 </head>
+
 <body>
-    <header id="header">
-        <h1><span>SNEHA</span> DAS</h1>
-        <hr>
-        <p>B.TECH CSE - ARTIFICIAL INTELLIGENCE & DATA SCIENCE</p>
-        <hr>
-    </header>
-    <main>
-        <article id="mainLeft">
-            <section>
-                <h2>CONTACT</h2>
-                <div class="contact-item">sn2005eha26das@gmail.com</div>
-                <div class="contact-item">Snehadas2005</div>
-                <div class="contact-item">linkedin.com/in/sneha-das-61302227a</div>
-            </section>
-            
-            <section>
-                <h2>SKILLS</h2>
-                <p>React.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap, GSAP, Three.js, Firebase, Flask, Python, Java, Git, Figma</p>
-            </section>
-            
-            <section>
-                <h2>EDUCATION</h2>
-                <p class="skill-category">B.Tech AI & Data Science</p>
-                <p>Galgotias University</p>
-                <p>October 2023 - Present</p>
-            </section>
-        </article>
-        
-        <article id="mainRight">
-            <section>
-                <h2>ABOUT</h2>
-                <p>B.Tech CSE student specializing in AI and Data Science with expertise in React.js, Firebase, and modern web development. Contributed to 10+ open-source projects including 6+ under GirlScript Summer of Code. Winner of DEV Community June Frontend Challenge with "The Queer Station" platform.</p>
-            </section>
-            
-            <section>
-                <h2>PROJECTS</h2>
-                
-                <p class="job-title">AI PRESCRIPTION & SYMPTOMS TRACKER</p>
-                <p class="job-date">Ongoing Project</p>
-                <p>Developing intelligent healthcare application with OCR-based prescription analysis and AI-powered symptom tracking using Tesseract, PyTorch, spaCy, and React.</p>
-                <ul>
-                    <li>Implementing ML models for symptom pattern recognition and health insights</li>
-                    <li>Building NLP capabilities for medical text processing and entity extraction</li>
-                    <li>Creating responsive React frontend for seamless data visualization</li>
-                </ul>
-                
-                <p class="job-title">FRONTEND DEVELOPER & LEAD</p>
-                <p class="job-date">PRO-TECH-TOR Safety App | October 2024</p>
-                <p>Led 5-member team at Smart India Hackathon 2024 to build real-time women's safety application with sub-2-second emergency alert system using OpenCV, Flet, and Socket Programming.</p>
-                <ul>
-                    <li>Integrated GPS tracking, live video capture, and emergency contact alerts</li>
-                    <li>Delivered intuitive frontend UX recognized at national hackathon</li>
-                </ul>
-                
-                <p class="job-title">OPEN-SOURCE CONTRIBUTOR</p>
-                <p class="job-date">GirlScript Summer of Code | June 2025 - July 2025</p>
-                <p>Developed scalable frontend components and integrated backend APIs across 6+ projects using React, TypeScript, Firebase, and Tailwind CSS.</p>
-                <ul>
-                    <li>Implemented profile management modules improving workflow efficiency by 30%</li>
-                    <li>Integrated Gemini chatbot and real-time features enhancing user engagement</li>
-                </ul>
-                
-                <p class="job-title">FRONTEND DEVELOPER</p>
-                <p class="job-date">QueerStation Platform | June 2025</p>
-                <p>Built award-winning real-time story-sharing platform using JavaScript and Firebase, winner of DEV Community Frontend Challenge.</p>
-                <ul>
-                    <li>Achieved 50+ visitors with 25% story submission rate</li>
-                    <li>Integrated EmailJS for secure real-time communication</li>
-                </ul>
-            </section>
-        </article>
-    </main>
+
+    <h1>Sneha Das</h1>
+    <div class="contact">
+        +91 8384002058 • sn2005eha26das@gmail.com • New Delhi, India • 
+        <a href="https://sneha-das-portfolio.vercel.app/" target="_blank">Portfolio</a>
+    </div>
+
+    <h3>Career Objective</h3>
+    <p>
+        <strong>B. Tech CSE student specialising in Artificial Intelligence and Data Science</strong>, skilled in React.js, Firebase, and modern web development with a focus on building scalable, AI-driven, and inclusive solutions.
+    </p>
+
+    <h3>Education</h3>
+
+    <div class="section">
+        <div class="flex-row">
+            <h4>Galgotias University, Greater Noida</h4>
+            <span>Graduation 2027 (Expected)</span>
+        </div>
+        <p class="subtext">
+            Bachelor of Technology in Artificial Intelligence and Data Science
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="flex-row">
+            <h4>Balvantray Mehta Vidya Bhawan Anguridevi Shersingh Memorial Academy</h4>
+            <span>2021 – 2023</span>
+        </div>
+        <ul>
+            <li>10th – 92%</li>
+            <li>12th – 75%</li>
+        </ul>
+    </div>
+
+    <h3>Skills</h3>
+    <ul>
+        <li><strong>Frontend:</strong> React.js, JavaScript, HTML5, CSS3, Tailwind CSS</li>
+        <li><strong>Backend / Databases:</strong> FastAPI, Firebase (Firestore, Auth), Go</li>
+        <li><strong>Programming Languages:</strong> Python, Java</li>
+        <li><strong>Machine Learning:</strong> Scikit-learn, NLP, OCR, Model Evaluation (AUC, Precision, Recall)</li>
+        <li><strong>Tools & Deployment:</strong> Git/GitHub, Docker, REST APIs</li>
+    </ul>
+
+    <h3>Projects</h3>
+
+    <div class="section">
+        <div class="flex-row">
+            <h4>Story Sharing Platform – DEV.to Frontend Juneth Winner</h4>
+            <span>June 2025</span>
+        </div>
+        <ul>
+            <li>Built a real-time story-sharing platform using HTML, CSS, JavaScript, and Firebase Firestore supporting 50+ active users.</li>
+            <li>Integrated EmailJS for secure submissions, achieving a 25% story submission rate and strong community engagement.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="flex-row">
+            <h4>SentraSec AI – Team Lead & Frontend Developer</h4>
+            <span>Nov 2025</span>
+        </div>
+        <ul>
+            <li>Built an AI-powered cybersecurity platform using Next.js, Node.js, Firebase, and Google Gemini API for threat detection.</li>
+            <li>Unified phishing and configuration analysis tools into a dashboard reducing manual review time by 80%.</li>
+            <li>Secured 2nd Runner-Up at Built-A-Thon by GDG Noida.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <div class="flex-row">
+            <h4>Prescription Analyzer AI – Full Stack ML Healthcare System</h4>
+            <span>Dec 2025 – Feb 2026</span>
+        </div>
+        <ul>
+            <li>Designed an AI-powered prescription analysis system using OCR and NLP for automated drug identification and dosage detection with 95% accuracy.</li>
+            <li>Developed and deployed a containerized ML pipeline using FastAPI and Firebase enabling real-time prescription analysis.</li>
+            <li>Integrated RESTful APIs connecting frontend, ML inference engine, and secure cloud storage with optimized inference latency.</li>
+        </ul>
+    </div>
+
+    <h3>Achievements & Certifications</h3>
+    <ul>
+        <li>Full Stack Development – Udemy</li>
+        <li>Data Science & Analytics – HCL GUVI</li>
+        <li>AI-ML Virtual Internship – EduSkills</li>
+        <li>Built-A-Thon – Google Developer Group Noida</li>
+    </ul>
+
+    <h3>Leadership & Activities</h3>
+
+    <div class="section">
+        <div class="flex-row">
+            <h4>Rotary Club – Secretary</h4>
+            <span>May 2021 – May 2022</span>
+        </div>
+        <p class="subtext">
+            Led social initiatives including environmental and mental health awareness drives impacting 500+ participants.
+        </p>
+    </div>
+
+    <div class="section">
+        <div class="flex-row">
+            <h4>GDG on Campus – Design Lead</h4>
+            <span>Oct 2025 – Present</span>
+        </div>
+        <p class="subtext">
+            Leading visual design and branding for developer community events in collaboration with GDG New Delhi.
+        </p>
+    </div>
+
 </body>
 </html>
